@@ -1,0 +1,1433 @@
+<!DOCTYPE html>
+<html lang="it"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Perché i salari italiani sono bassi: un modello quantitativo</title>
+<style>
+:root{--text:#1f1f1f;--sec:#5f5f5f;--accent:#2a78d6;--rule:#e4e2da;--bg:#fbfaf7}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:17px/1.65 Georgia,"Iowan Old Style","Times New Roman",serif}
+main{max-width:760px;margin:0 auto;padding:56px 24px 96px}
+h1{font:700 2.1rem/1.2 -apple-system,"Segoe UI",Helvetica,Arial,sans-serif;margin:0 0 .4rem}
+h2{font:700 1.45rem/1.3 -apple-system,"Segoe UI",Helvetica,Arial,sans-serif;margin:3rem 0 .8rem;padding-top:1.2rem;border-top:1px solid var(--rule)}
+h3{font:600 1.12rem/1.35 -apple-system,"Segoe UI",Helvetica,Arial,sans-serif;margin:2rem 0 .5rem}
+.byline{color:var(--sec);font:14px -apple-system,"Segoe UI",Helvetica,Arial,sans-serif;margin-bottom:2rem}
+a{color:var(--accent)}
+table{border-collapse:collapse;width:100%;margin:1.2rem 0;font:14.5px/1.45 -apple-system,"Segoe UI",Helvetica,Arial,sans-serif}
+th,td{border-bottom:1px solid var(--rule);padding:.5rem .6rem;text-align:left;vertical-align:top}
+th{border-bottom:2px solid #cfcdc4;font-weight:600}
+math[display="block"]{display:table;margin:1.1rem auto;max-width:100%;font-size:1.12em}
+math{font-size:1.04em}
+figure.chart{margin:2rem 0;padding:16px;background:#fff;border:1px solid var(--rule);border-radius:8px}
+figure.chart svg{width:100%;height:auto;display:block;font-family:-apple-system,"Segoe UI",Helvetica,Arial,sans-serif}
+figcaption{color:var(--sec);font:13px -apple-system,"Segoe UI",Helvetica,Arial,sans-serif;margin-top:8px}
+blockquote{border-left:3px solid var(--rule);margin:1rem 0;padding:.2rem 1rem;color:var(--sec)}
+li{margin:.3rem 0}
+</style></head>
+<body><main>
+<h1
+id="perché-i-salari-italiani-sono-bassi-un-modello-quantitativo">Perché
+i salari italiani sono bassi: un modello quantitativo</h1>
+<p class="byline">16 novembre 2026 · @G</p>
+<p>Non è una novità: I salari italiani sono bassi. In particolare, sono
+notevolmente più bassi di altre economie europee con cui fino a qualche
+decennio fa ci comparavamo senza particolari differenze.</p>
+<p>Quando l’opinione pubblica prova a dibattere sul perché, saltano
+fuori spiegazioni qualitative, imprecise e soprattutto piene di falsi
+miti. </p>
+<p>Si parla di elevato costo del lavoro, aziende con pochi margini e
+quindi “poco produttive” (la <em>buzzword</em> che viene usata da chi
+non sa o non vuole specificare tutte le ambiguità che si nascondono
+dietro).  </p>
+<p>In questo articolo proviamo a rispondere alla domanda e vedremo quali
+di queste ipotesi sono accurate e quali invece scricchiolano di fronte
+alle evidenze quantitative.</p>
+<p>Faremo ciò costruendo un modello passo dopo passo, con una regola:
+ogni affermazione deve essere falsificabile, cioè deve fare una
+previsione che i dati possono smentire. </p>
+<p><em><strong>TL;DR, se vuoi saltare subito alla conclusione:</strong>
+a parità di settore e dimensione, le aziende italiane
+<strong>non</strong> sono meno produttive delle loro controparti
+tedesche. Addirittura, trattengono più margini e distribuiscono meno
+quota del loro valore aggiunto al lavoratore italiano (soffrendo di
+fatto un costo del lavoro inferiore a parità di produttività). Il
+divario tra i salari si spiega principalmente con la composizione
+relativa dell’economia italiana: dominata da PMI che in aggregato
+raccolgono meno valore aggiunto e offrono scarse alternative solide al
+lavoratore italiano.</em></p>
+<h2 id="il-problema-trentanni-di-salari-fermi">1. Il problema:
+trent’anni di salari fermi</h2>
+<p>Nel 2024 un lavoratore italiano a tempo pieno guadagnava in media
+33.523 € lordi l’anno, contro 53.791 € in Germania e 43.790 € in Francia
+(<a
+href="https://scantv.al/english/lajme/europa/be-pagat-mesatare-u-rriten-me-52-cilat-shtete-kryesuan-renditjen-ev-i27826">Eurostat</a>).
+Anche al netto delle tasse e a parità di potere d’acquisto il distacco
+resta: circa 24 mila contro 34,9 mila in Germania e 28,5 mila in Francia
+(dati 2023, <a href="https://www.fortuneita.com/?p=352638">Fortune
+Italia</a>).</p>
+<p>Il livello però non è l’anomalia più grave. La vera anomalia è la
+dinamica:</p>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Salari reali</th>
+<th>Italia</th>
+<th>Francia</th>
+<th>Germania</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Variazione 1991-2023 (<a
+href="https://www.lavorodirittieuropa.it/images/LEONARDIdef.pdf">Leonardi</a>)</td>
+<td>−3,4%</td>
+<td>+30,9%</td>
+<td>+30,4%</td>
+</tr>
+<tr class="even">
+<td>Salari orari reali dal 2000 (<a
+href="https://www.money.it/pil-italia-fara-peggio-dell-eurozona-le-riflessioni-di-panetta-bankitalia-salari-fermi-dal-2000">Panetta,
+Banca d’Italia</a>)</td>
+<td>≈ 0%</td>
+<td>+14%</td>
+<td>+21%</td>
+</tr>
+</tbody>
+</table>
+<p>Non è sempre stato così. All’inizio degli anni Novanta l’Italia era
+alla pari con i vicini per reddito: nel 2000 il PIL pro capite a parità
+di potere d’acquisto valeva 116,9 in Italia, 118,5 in Germania e 115,4
+in Francia (media UE = 100), ma nel 2009 l’Italia era già scesa a 98,8
+(<a
+href="https://nens.it/sites/default/files/Pil%20Ppa%20Italia%20Europa.%2018.12.09.pdf">AMECO
+via Nens</a>). I salari erano un po’ più bassi già negli anni ’70 e ’80
+(<a
+href="https://media.fondazionedivittorio.it/sites/default/files/content-attachment/abstract_stampa.pdf">Ires-Cgil</a>),
+ma il grande distacco si è aperto dagli anni Novanta in poi. Negli anni
+Ottanta, invece, è calata la quota di reddito che andava ai salari: un
+fatto che ritroveremo.</p>
+<p>Da qui in poi ci concentriamo sul confronto con la Germania: è il
+vicino con cui il divario è più ampio, ed è quello con cui le imprese
+italiane competono più direttamente.</p>
+<h2 id="salario-produttività-e-quota-lavoro">2. Salario: produttività e
+quota lavoro</h2>
+<p>La spiegazione standard parte da un’identità contabile:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>w</mi><mo>=</mo><mi>s</mi><mo>⋅</mo><mi>v</mi></mrow><annotation encoding="application/x-tex">w = s \cdot v</annotation></semantics></math></p>
+<p>Il salario per ora
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>w</mi><annotation encoding="application/x-tex">w</annotation></semantics></math>
+è uguale al valore aggiunto per ora
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>v</mi><annotation encoding="application/x-tex">v</annotation></semantics></math>
+(quella che di solito si chiama “produttività”) moltiplicato per la
+quota lavoro
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>s</mi><annotation encoding="application/x-tex">s</annotation></semantics></math>.</p>
+<p>Questa equazione è vera per definizione: una azienda genera un certo
+valore aggiunto
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>v</mi><annotation encoding="application/x-tex">v</annotation></semantics></math>),
+e una frazione di questo (la quota lavoro
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>s</mi><annotation encoding="application/x-tex">s</annotation></semantics></math>)
+finisce nelle tasche del dipendente. Il resto va in margini operativi
+(lordi).<br />
+Come vedremo, il valore aggiunto già tiene in conto di tutti i costi
+intermedi (energia, materie prime, ecc..).</p>
+<p>Quindi possiamo iniziare già a misurare qualcosa: se i salari sono
+bassi, o
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>v</mi><annotation encoding="application/x-tex">v</annotation></semantics></math>
+è basso, o
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>s</mi><annotation encoding="application/x-tex">s</annotation></semantics></math>
+è basso. </p>
+<p>La risposta di rito è “la produttività è bassa”: una frase che spesso
+chiude la discussione invece di aprirla.</p>
+<p><strong>Prima verifica: le imprese italiane trattengono di
+più?</strong> Sì.</p>
+<p>Nel 2023 la quota profitti delle società non finanziarie era 45,6% in
+Italia, contro 39,7% in Spagna, 39,1% in Germania e 32,7% in Francia (<a
+href="https://ec.europa.eu/eurostat/statistics-explained/SEPDF/cache/65807.pdf">Eurostat</a>).
+Anche sull’intera economia, corretta per i lavoratori autonomi, la quota
+salari italiana è la più bassa tra le grandi economie europee (<a
+href="https://www.boeckler.de/pdf/v_2022_10_22_giangrande.pdf">Giangrande,
+dati AMECO</a>).</p>
+<p>Ma questa spiegazione non basta. Due problemi:</p>
+<ul>
+<li><strong>Spiega solo una parte del livello.</strong> Dando all’Italia
+la quota lavoro tedesca, i salari salirebbero di circa il 12%: un terzo
+del divario, a una prima stima sulla contabilità nazionale.</li>
+<li><strong>Non spiega il trend.</strong> Se la causa della stagnazione
+fosse la distribuzione, la quota lavoro dovrebbe scendere dal 1995 in
+poi. Non succede: è rimasta stabile o è salita (<a
+href="https://www.wiso.uni-hamburg.de/fachbereich-sozoek/professuren/heise/zoess/publikationen/zoess-discussion-papers/dp-121-heise.pdf">Heise</a>).
+Il grande calo c’è stato negli anni Ottanta. Dal 1995 al 2024 è il
+valore aggiunto per ora a essere fermo: +0,3% l’anno (<a
+href="https://www.milanofinanza.it/mfnewswires/imprese-istat-1-9-produttivita-lavoro-in-2024-persiste-ampio-gap-con-paesi-ue-202512121324011762">Istat</a>).</li>
+</ul>
+<p>Prima ipotesi falsificata sul trend. </p>
+<p>Non ci resta che cercare di misurare la “produttività”, ovvero il
+valore aggiunto
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>v</mi><annotation encoding="application/x-tex">v</annotation></semantics></math>.</p>
+<p>Per capire cosa c’è dentro
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>v</mi><annotation encoding="application/x-tex">v</annotation></semantics></math>
+serve però una distinzione cruciale che le medie nazionali di solito
+nascondono.</p>
+<p><strong>Consideriamo due tipi di prodotti: il pneumatico e il taglio
+di capelli.</strong> Un’azienda italiana e una tedesca che producono lo
+stesso pneumatico lo vendono allo stesso prezzo, perché competono sullo
+stesso mercato europeo. Se una delle due incassa di più per ora
+lavorata, è perché ne produce di più, o con meno costi. Un barbiere di
+Monaco invece incassa di più di uno di Bari semplicemente perché a
+Monaco il taglio costa di più: non taglia più capelli per ora.</p>
+<p>Da qui la prima scelta del modello: dividere l’economia in due
+settori.</p>
+<ul>
+<li><strong>Settore esposto
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>T</mi><annotation encoding="application/x-tex">T</annotation></semantics></math></strong>
+(da <em>tradable</em>): beni e servizi che competono con produttori
+stranieri, all’estero o in Italia. Manifattura, software, turismo
+internazionale. Il prezzo lo fa il mercato internazionale.</li>
+<li><strong>Settore interno
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi><annotation encoding="application/x-tex">N</annotation></semantics></math></strong>
+(da <em>non-tradable</em>): servizi venduti solo localmente, come
+barbieri, ristoranti per i residenti, affitti. Il prezzo si forma nel
+paese.</li>
+</ul>
+<h2 id="il-modello-passo-dopo-passo">3. Il modello, passo dopo
+passo</h2>
+<h3 id="lidea-di-partenza">3.1 L’idea di partenza</h3>
+<p>Il salario che un’impresa paga dipende da due cose: quanta ricchezza
+genera ogni lavoratore, e quanto quel lavoratore potrebbe guadagnare
+altrove. La seconda la chiamiamo <strong>alternativa</strong>.</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>w</mi><mo>=</mo><mi>f</mi><mrow><mo stretchy="true" form="prefix">(</mo><mtext mathvariant="normal">rendita per dipendente</mtext><mo>,</mo><mspace width="0.222em"></mspace><mtext mathvariant="normal">alternativa</mtext><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">w = f(\text{rendita per dipendente},\ \text{alternativa})</annotation></semantics></math></p>
+<h3 id="cosè-la-rendita-per-dipendente">3.2 Cos’è la rendita per
+dipendente</h3>
+<p>Non è il fatturato per dipendente. Il fatturato contiene componenti,
+energia e servizi comprati da altre imprese. Va tolto quello che si
+compra (i <strong>costi intermedi</strong>): resta il <strong>valore
+aggiunto per dipendente</strong>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>v</mi><annotation encoding="application/x-tex">v</annotation></semantics></math>.
+Il valore aggiunto si divide poi tra lavoratori e impresa:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>=</mo><mfrac><mrow><mtext mathvariant="normal">Fatturato</mtext><mo>−</mo><mtext mathvariant="normal">Costi intermedi</mtext></mrow><mi>L</mi></mfrac><mo>=</mo><mi>w</mi><mo>+</mo><mi>π</mi></mrow><annotation encoding="application/x-tex">v = \frac{\text{Fatturato} - \text{Costi intermedi}}{L} = w + \pi</annotation></semantics></math></p>
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>π</mi><annotation encoding="application/x-tex">\pi</annotation></semantics></math>
+è il margine operativo lordo per dipendente: copre ammortamenti,
+interessi, tasse e profitto. La quota lavoro è
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>=</mo><mi>w</mi><mi>/</mi><mi>v</mi></mrow><annotation encoding="application/x-tex">s = w/v</annotation></semantics></math>,
+il margine è
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>−</mo><mi>s</mi></mrow><annotation encoding="application/x-tex">1 - s</annotation></semantics></math>.
+Margine e quota lavoro sono quindi la stessa informazione vista da due
+lati: non sono una causa, sono il risultato di come si divide
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>v</mi><annotation encoding="application/x-tex">v</annotation></semantics></math>.</p>
+<h3 id="come-si-divide-la-contrattazione">3.3 Come si divide: la
+contrattazione</h3>
+<p>Il modello standard per questa divisione è la contrattazione di Nash.
+Il lavoratore ottiene la sua alternativa
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>b</mi><annotation encoding="application/x-tex">b</annotation></semantics></math>
+più una parte
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>β</mi><annotation encoding="application/x-tex">\beta</annotation></semantics></math>
+di quello che l’impresa genera in più:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>w</mi><mo>=</mo><mi>b</mi><mo>+</mo><mi>β</mi><mspace width="0.167em"></mspace><mrow><mo stretchy="true" form="prefix">(</mo><mi>v</mi><mo>−</mo><mi>b</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>,</mo><mspace width="2.0em"></mspace><mn>0</mn><mo>≤</mo><mi>β</mi><mo>≤</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">w = b + \beta\,(v - b), \qquad 0 \le \beta \le 1</annotation></semantics></math></p>
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>β</mi><annotation encoding="application/x-tex">\beta</annotation></semantics></math>
+è il <strong>potere contrattuale</strong>: contratti, sindacati, salario
+minimo. Da questa formula segue la quota lavoro:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>=</mo><mfrac><mi>w</mi><mi>v</mi></mfrac><mo>=</mo><mi>β</mi><mo>+</mo><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>−</mo><mi>β</mi><mo stretchy="true" form="postfix">)</mo></mrow><mspace width="0.167em"></mspace><mfrac><mi>b</mi><mi>v</mi></mfrac></mrow><annotation encoding="application/x-tex">s = \frac{w}{v} = \beta + (1-\beta)\,\frac{b}{v}</annotation></semantics></math></p>
+<p>C’è anche un tetto. Il capitale può spostarsi, quindi l’impresa resta
+solo se il margine ripaga il capitale investito per dipendente
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math>
+al rendimento richiesto
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>r</mi><annotation encoding="application/x-tex">r</annotation></semantics></math>:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>w</mi><mo>≤</mo><mi>v</mi><mo>−</mo><mi>r</mi><mspace width="0.167em"></mspace><mi>k</mi></mrow><annotation encoding="application/x-tex">w \le v - r\,k</annotation></semantics></math></p>
+<h3 id="la-differenza-tra-germania-e-italia">3.4 La differenza tra
+Germania e Italia</h3>
+<p>Per due imprese, una tedesca e una italiana, la differenza di salario
+si scompone in tre termini:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>w</mi><mrow><mi>D</mi><mi>E</mi></mrow></msub><mo>−</mo><msub><mi>w</mi><mrow><mi>I</mi><mi>T</mi></mrow></msub><mo>≈</mo><mi>β</mi><mspace width="0.167em"></mspace><mi>Δ</mi><mi>v</mi><mo>+</mo><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>−</mo><mi>β</mi><mo stretchy="true" form="postfix">)</mo></mrow><mspace width="0.167em"></mspace><mi>Δ</mi><mi>b</mi><mo>+</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>v</mi><mo>−</mo><mi>b</mi><mo stretchy="true" form="postfix">)</mo></mrow><mspace width="0.167em"></mspace><mi>Δ</mi><mi>β</mi></mrow><annotation encoding="application/x-tex">w_{DE} - w_{IT} \approx \beta\,\Delta v + (1-\beta)\,\Delta b + (v-b)\,\Delta\beta</annotation></semantics></math></p>
+<p>Il primo è la differenza di valore aggiunto, il secondo quella di
+alternativa, il terzo quella di potere contrattuale. Per due imprese
+davvero equivalenti
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Δ</mi><mi>v</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\Delta v = 0</annotation></semantics></math>,
+e restano solo alternativa e potere contrattuale.</p>
+<h3 id="da-dove-viene-lalternativa">3.5 Da dove viene l’alternativa</h3>
+<p>Qui entrano in gioco i due settori (T e N) messi insieme. </p>
+<ol type="1">
+<li><strong>Il reddito è la somma di ciò che producono i due
+settori</strong>, misurato come valore aggiunto per occupato.</li>
+<li><strong>Il settore esposto</strong> vende sul mercato
+internazionale: il suo contributo è quanto vale in media ogni suo
+lavoratore, moltiplicato per la quota di lavoratori che ci
+lavorano.</li>
+<li><strong>Il settore interno</strong> vive di ciò che le famiglie
+spendono in servizi locali. Le famiglie spendono in servizi una quota
+fissa del reddito che resta nel paese, cioè del reddito meno l’avanzo
+commerciale.</li>
+<li>Il reddito dei servizi è quindi una parte del reddito totale stesso.
+Mettendo insieme i due fatti si può ricavare il reddito totale in
+funzione del solo settore esposto.</li>
+</ol>
+<p>I simboli usati da qui in poi:</p>
+<p>Il pedice
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>T</mi><annotation encoding="application/x-tex">T</annotation></semantics></math>
+indica il settore esposto al mercato internazionale (<em>tradable</em>),
+il pedice
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi><annotation encoding="application/x-tex">N</annotation></semantics></math>
+il settore interno, cioè i servizi venduti solo localmente
+(<em>non-tradable</em>).
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>Y</mi><annotation encoding="application/x-tex">Y</annotation></semantics></math>
+è il reddito per occupato: il valore aggiunto in euro per lavoratore in
+tutta l’economia.
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+è un prezzo:
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>p</mi><mi>T</mi></msub><annotation encoding="application/x-tex">p_T</annotation></semantics></math>
+lo fissa il mercato internazionale,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>p</mi><mi>N</mi></msub><annotation encoding="application/x-tex">p_N</annotation></semantics></math>
+si forma nel paese.
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math>
+è la quantità fisica prodotta per occupato, come pezzi, tagli di capelli
+o pasti.</p>
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>=</mo><mi>p</mi><mo>⋅</mo><mi>a</mi></mrow><annotation encoding="application/x-tex">v = p \cdot a</annotation></semantics></math>
+è il valore aggiunto per occupato in euro (nel settore esposto, al netto
+dei costi degli input).
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>
+è la quota di occupati in un settore, con
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>n</mi><mi>T</mi></msub><mo>+</mo><msub><mi>n</mi><mi>N</mi></msub><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">n_T + n_N = 1</annotation></semantics></math>.
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>α</mi><annotation encoding="application/x-tex">\alpha</annotation></semantics></math>
+è la quota della spesa delle famiglie che va ai servizi locali. Infine
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi><annotation encoding="application/x-tex">S</annotation></semantics></math>
+è l’avanzo commerciale per occupato: export meno import, cioè reddito
+prodotto ma non speso nel paese.</p>
+<p>In simboli: chiamiamo
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>v</mi><mi>T</mi></msub><annotation encoding="application/x-tex">v_T</annotation></semantics></math>
+il valore aggiunto per addetto nel settore esposto e
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>n</mi><mi>T</mi></msub><annotation encoding="application/x-tex">n_T</annotation></semantics></math>
+la quota di occupati che ci lavora. Le famiglie spendono una quota
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>α</mi><annotation encoding="application/x-tex">\alpha</annotation></semantics></math>
+del reddito in servizi locali, e
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi><annotation encoding="application/x-tex">S</annotation></semantics></math>
+è l’avanzo commerciale (export meno import), cioè il reddito prodotto ma
+non speso nel paese. Il reddito per occupato è:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Y</mi><mo>=</mo><msub><mi>v</mi><mi>T</mi></msub><mspace width="0.167em"></mspace><msub><mi>n</mi><mi>T</mi></msub><mo>+</mo><msub><mi>p</mi><mi>N</mi></msub><mspace width="0.167em"></mspace><msub><mi>a</mi><mi>N</mi></msub><mspace width="0.167em"></mspace><msub><mi>n</mi><mi>N</mi></msub><mo>,</mo><mspace width="2.0em"></mspace><msub><mi>p</mi><mi>N</mi></msub><mspace width="0.167em"></mspace><msub><mi>a</mi><mi>N</mi></msub><mspace width="0.167em"></mspace><msub><mi>n</mi><mi>N</mi></msub><mo>=</mo><mi>α</mi><mspace width="0.167em"></mspace><mrow><mo stretchy="true" form="prefix">(</mo><mi>Y</mi><mo>−</mo><mi>S</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">Y = v_T\,n_T + p_N\,a_N\,n_N, \qquad p_N\,a_N\,n_N = \alpha\,(Y - S)</annotation></semantics></math></p>
+<p>Risolvendo:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Y</mi><mo>=</mo><mfrac><mrow><msub><mi>v</mi><mi>T</mi></msub><mspace width="0.167em"></mspace><msub><mi>n</mi><mi>T</mi></msub><mo>−</mo><mi>α</mi><mspace width="0.167em"></mspace><mi>S</mi></mrow><mrow><mn>1</mn><mo>−</mo><mi>α</mi></mrow></mfrac></mrow><annotation encoding="application/x-tex">Y = \frac{v_T\,n_T - \alpha\,S}{1-\alpha}</annotation></semantics></math></p>
+<p>Questa è l’equazione centrale. I servizi locali non creano reddito da
+soli: redistribuiscono quello che entra dal settore esposto. Il salario
+nei servizi locali diventa l’alternativa di chi lavora nel settore
+esposto, insieme alla probabilità
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>u</mi><annotation encoding="application/x-tex">u</annotation></semantics></math>
+di restare senza lavoro (con un reddito di riserva
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>z</mi><annotation encoding="application/x-tex">z</annotation></semantics></math>)
+e alla possibilità di emigrare, che costa
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>c</mi><annotation encoding="application/x-tex">c</annotation></semantics></math>:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi><mo>=</mo><mo>max</mo><mrow><mo stretchy="true" form="prefix">[</mo><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>−</mo><mi>u</mi><mo stretchy="true" form="postfix">)</mo></mrow><mspace width="0.167em"></mspace><msub><mi>w</mi><mi>N</mi></msub><mo>+</mo><mi>u</mi><mspace width="0.167em"></mspace><mi>z</mi><mo>,</mo><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><msub><mi>w</mi><mrow><mi>e</mi><mi>s</mi><mi>t</mi><mi>e</mi><mi>r</mi><mi>o</mi></mrow></msub><mo>−</mo><mi>c</mi><mo stretchy="true" form="postfix">]</mo></mrow><mo>,</mo><mspace width="2.0em"></mspace><msub><mi>w</mi><mi>N</mi></msub><mo>≈</mo><mfrac><mrow><mi>α</mi><mspace width="0.167em"></mspace><mrow><mo stretchy="true" form="prefix">(</mo><mi>Y</mi><mo>−</mo><mi>S</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><msub><mi>n</mi><mi>N</mi></msub></mfrac></mrow><annotation encoding="application/x-tex">b = \max\left[(1-u)\,w_N + u\,z,\ \ w_{estero} - c\right], \qquad w_N \approx \frac{\alpha\,(Y - S)}{n_N}</annotation></semantics></math></p>
+<p>Un dettaglio controintuitivo: l’avanzo commerciale
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi><annotation encoding="application/x-tex">S</annotation></semantics></math>
+abbassa i salari. È reddito che non viene speso nel paese, quindi non
+arriva ai servizi locali. Questo vale per il saldo netto, non per
+l’export: esportare di più e spendere quel reddito (anche in beni
+importati) alza i salari senza cambiare il saldo.</p>
+<p><em>Nota sul caso limite: un’economia fatta solo di servizi
+locali.</em> Corrisponde a
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>α</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\alpha = 1</annotation></semantics></math>,
+e l’equazione centrale diventa
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mi>/</mi><mn>0</mn></mrow><annotation encoding="application/x-tex">0/0</annotation></semantics></math>:
+il reddito in euro non è fissato da nulla di esterno e dipende solo
+dalla moneta in circolazione. Il reddito reale invece è ben definito:
+vale
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mi>N</mi></msub><mo>⋅</mo><msub><mi>n</mi><mi>N</mi></msub></mrow><annotation encoding="application/x-tex">a_N \cdot n_N</annotation></semantics></math>,
+cioè quanti servizi l’economia produce per abitante. Un’economia così
+esiste, ma in autarchia: deve produrre in casa tutto ciò che consuma ed
+è molto più povera, perché rinuncia a specializzarsi.</p>
+<p>Quindi la frase “i servizi locali non creano reddito da soli” va
+letta in senso preciso. I servizi creano valore reale: un taglio di
+capelli è un taglio di capelli. Ma non fissano il livello del reddito in
+euro rispetto al resto del mondo, e non pagano ciò che il paese compra
+all’estero, come energia, telefoni e macchinari. Per questo serve il
+settore esposto, oppure prestiti e trasferimenti dall’esterno, che nel
+modello funzionano come un
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi><annotation encoding="application/x-tex">S</annotation></semantics></math>
+negativo.</p>
+<h3 id="le-leve">3.6 Le leve</h3>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Leva</th>
+<th>Simbolo</th>
+<th>Effetto sui salari</th>
+<th>Limite</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Valore aggiunto del settore esposto</td>
+<td><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>v</mi><mi>T</mi></msub><annotation encoding="application/x-tex">v_T</annotation></semantics></math></td>
+<td>Alza
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>Y</mi><annotation encoding="application/x-tex">Y</annotation></semantics></math>,
+quindi
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>b</mi><annotation encoding="application/x-tex">b</annotation></semantics></math>
+e
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>w</mi><annotation encoding="application/x-tex">w</annotation></semantics></math>
+ovunque</td>
+<td>Lenta da spostare</td>
+</tr>
+<tr class="even">
+<td>Occupati nel settore esposto</td>
+<td><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>n</mi><mi>T</mi></msub><annotation encoding="application/x-tex">n_T</annotation></semantics></math></td>
+<td>Alza
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>Y</mi><annotation encoding="application/x-tex">Y</annotation></semantics></math>
+e
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>b</mi><annotation encoding="application/x-tex">b</annotation></semantics></math></td>
+<td>Serve domanda internazionale</td>
+</tr>
+<tr class="odd">
+<td>Potere contrattuale</td>
+<td><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>β</mi><annotation encoding="application/x-tex">\beta</annotation></semantics></math></td>
+<td>Alza
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>w</mi><annotation encoding="application/x-tex">w</annotation></semantics></math>,
+riduce i margini</td>
+<td>Tetto
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>w</mi><mo>≤</mo><mi>v</mi><mo>−</mo><mi>r</mi><mi>k</mi></mrow><annotation encoding="application/x-tex">w \le v - rk</annotation></semantics></math></td>
+</tr>
+<tr class="even">
+<td>Costo di emigrare</td>
+<td><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>c</mi><annotation encoding="application/x-tex">c</annotation></semantics></math></td>
+<td>Più basso alza
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>b</mi><annotation encoding="application/x-tex">b</annotation></semantics></math></td>
+<td>Fuga di competenze</td>
+</tr>
+<tr class="odd">
+<td>Avanzo commerciale</td>
+<td><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi><annotation encoding="application/x-tex">S</annotation></semantics></math></td>
+<td>Più basso alza
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>w</mi><mi>N</mi></msub><annotation encoding="application/x-tex">w_N</annotation></semantics></math></td>
+<td>Va finanziato se diventa deficit</td>
+</tr>
+<tr class="even">
+<td>Disoccupazione</td>
+<td><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>u</mi><annotation encoding="application/x-tex">u</annotation></semantics></math></td>
+<td>Più bassa alza
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>b</mi><annotation encoding="application/x-tex">b</annotation></semantics></math></td>
+<td>Dipende dalle leve sopra</td>
+</tr>
+</tbody>
+</table>
+<p>Un esempio con numeri inventati, per vedere come gira il modello
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>α</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>6</mn></mrow><annotation encoding="application/x-tex">\alpha = 0{,}6</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>β</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>3</mn></mrow><annotation encoding="application/x-tex">\beta = 0{,}3</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">S = 0</annotation></semantics></math>).
+Un’impresa con
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>v</mi><mi>T</mi></msub><annotation encoding="application/x-tex">v_T</annotation></semantics></math>
+= 80 mila euro paga 55,5 mila in un paese dove l’alternativa vale 45
+mila, e 45 mila dove l’alternativa vale 30 mila: lo stesso valore
+aggiunto, il 23% di salario in meno. È il caso di una multinazionale che
+paga diversamente gli operai dello stesso prodotto in due paesi,
+documentato dalla ricerca (<a
+href="https://researchonline.lse.ac.uk/id/eprint/126836/1/dp1975.pdf">Minni,
+LSE</a>).</p>
+<h2 id="cosa-cè-davvero-dentro-la-parola-produttività">4. Cosa c’è
+davvero dentro la parola “produttività”</h2>
+<p>Con il modello in mano possiamo smontare la parola. Si scopre che
+significa tre cose diverse, a seconda di dove la si guarda.</p>
+<h3 id="nel-settore-esposto-tre-ingredienti-e-un-residuo">4.1 Nel
+settore esposto: tre ingredienti e un residuo</h3>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mi>T</mi></msub><mo>=</mo><msub><mi>p</mi><mi>T</mi></msub><mo>⋅</mo><msub><mi>a</mi><mi>T</mi></msub><mo>−</mo><msub><mi>p</mi><mi>M</mi></msub><mo>⋅</mo><msub><mi>m</mi><mi>T</mi></msub><mo>,</mo><mspace width="2.0em"></mspace><msub><mi>a</mi><mi>T</mi></msub><mo>=</mo><msub><mi>A</mi><mi>T</mi></msub><mo>⋅</mo><msubsup><mi>k</mi><mi>T</mi><mi>γ</mi></msubsup></mrow><annotation encoding="application/x-tex">v_T = p_T \cdot a_T - p_M \cdot m_T, \qquad a_T = A_T \cdot k_T^{\gamma}</annotation></semantics></math></p>
+<ul>
+<li><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>a</mi><mi>T</mi></msub><annotation encoding="application/x-tex">a_T</annotation></semantics></math>
+è la <strong>produttività fisica</strong>: pneumatici, macchine, pezzi
+prodotti per ora. È l’unica cosa che corrisponde all’idea intuitiva di
+produttività. Dipende dal capitale per addetto
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>k</mi><mi>T</mi></msub><annotation encoding="application/x-tex">k_T</annotation></semantics></math>
+(i macchinari) e da un residuo
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>A</mi><mi>T</mi></msub><annotation encoding="application/x-tex">A_T</annotation></semantics></math>.</li>
+<li><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>A</mi><mi>T</mi></msub><annotation encoding="application/x-tex">A_T</annotation></semantics></math>
+è la famosa “produttività totale dei fattori”. È letteralmente un
+residuo: la parte di crescita che non si riesce ad attribuire a lavoro e
+capitale. Chiamarla spiegazione significa dare un nome a ciò che non si
+sa spiegare.</li>
+<li><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>p</mi><mi>T</mi></msub><annotation encoding="application/x-tex">p_T</annotation></semantics></math>
+è il <strong>prezzo ottenuto sul mercato</strong>. Anche in un mercato
+unico non è uguale per tutti: dipende da qualità, marchio, fascia di
+mercato, potere contrattuale verso i clienti.</li>
+<li><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>p</mi><mi>M</mi></msub><mo>⋅</mo><msub><mi>m</mi><mi>T</mi></msub></mrow><annotation encoding="application/x-tex">p_M \cdot m_T</annotation></semantics></math>
+sono i <strong>costi degli input</strong> per addetto: energia,
+componenti, servizi comprati.</li>
+</ul>
+<p>La statistica misura solo il risultato,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>v</mi><mi>T</mi></msub><annotation encoding="application/x-tex">v_T</annotation></semantics></math>,
+e lo chiama produttività. Mette nello stesso numero efficienza fisica,
+potere di prezzo e costo dell’energia, che hanno cause e rimedi
+diversi.</p>
+<h3 id="nei-servizi-locali-una-definizione-circolare">4.2 Nei servizi
+locali: una definizione circolare</h3>
+<p>Nel settore interno il prezzo si forma nel paese. Dall’equazione dei
+servizi si ricava:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>p</mi><mi>N</mi></msub><mo>=</mo><mfrac><mrow><mi>α</mi><mspace width="0.167em"></mspace><mrow><mo stretchy="true" form="prefix">(</mo><mi>Y</mi><mo>−</mo><mi>S</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><mrow><msub><mi>a</mi><mi>N</mi></msub><mspace width="0.167em"></mspace><msub><mi>n</mi><mi>N</mi></msub></mrow></mfrac><mspace width="1.0em"></mspace><mo>⇒</mo><mspace width="1.0em"></mspace><msub><mi>p</mi><mi>N</mi></msub><mspace width="0.167em"></mspace><msub><mi>a</mi><mi>N</mi></msub><mo>=</mo><mfrac><mrow><mi>α</mi><mspace width="0.167em"></mspace><mrow><mo stretchy="true" form="prefix">(</mo><mi>Y</mi><mo>−</mo><mi>S</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><msub><mi>n</mi><mi>N</mi></msub></mfrac></mrow><annotation encoding="application/x-tex">p_N = \frac{\alpha\,(Y - S)}{a_N\,n_N} \quad\Rightarrow\quad p_N\,a_N = \frac{\alpha\,(Y - S)}{n_N}</annotation></semantics></math></p>
+<p>La produttività fisica dei servizi
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>a</mi><mi>N</mi></msub><annotation encoding="application/x-tex">a_N</annotation></semantics></math>
+si semplifica. Il valore aggiunto per ora di un barbiere, misurato in
+euro, non dipende da quanti tagli fa in un’ora: dipende solo dal reddito
+del paese
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>Y</mi><annotation encoding="application/x-tex">Y</annotation></semantics></math>.
+Se il barbiere diventa due volte più veloce, il taglio costa la metà e
+il suo valore aggiunto in euro per ora resta uguale. Dire che il
+barbiere di Bari guadagna poco perché è poco produttivo è un
+ragionamento circolare: la sua “produttività” è bassa perché i redditi
+intorno a lui sono bassi.</p>
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>a</mi><mi>N</mi></msub><annotation encoding="application/x-tex">a_N</annotation></semantics></math>
+conta però per il potere d’acquisto: servizi più efficienti costano
+meno.</p>
+<h3 id="la-produttività-aggregata-è-il-reddito">4.3 La produttività
+aggregata è il reddito</h3>
+<p>La “produttività del lavoro” di un paese, cioè il valore aggiunto in
+euro per occupato, nel modello è:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mi>Y</mi><mi>L</mi></mfrac><mo>=</mo><mfrac><mrow><msub><mi>v</mi><mi>T</mi></msub><mspace width="0.167em"></mspace><msub><mi>n</mi><mi>T</mi></msub><mo>−</mo><mi>α</mi><mspace width="0.167em"></mspace><mi>S</mi></mrow><mrow><mn>1</mn><mo>−</mo><mi>α</mi></mrow></mfrac></mrow><annotation encoding="application/x-tex">\frac{Y}{L} = \frac{v_T\,n_T - \alpha\,S}{1-\alpha}</annotation></semantics></math></p>
+<p>È la stessa grandezza del reddito per occupato. Dire che i salari
+sono bassi perché la produttività aggregata è bassa equivale a dire che
+sono bassi perché il reddito è basso: non spiega niente.</p>
+<p>Questa equazione però fa una cosa utile: sostituisce la parola
+generica con i fattori concreti che la determinano. Il valore aggiunto
+per addetto nel settore esposto
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>v</mi><mi>T</mi></msub><annotation encoding="application/x-tex">v_T</annotation></semantics></math>
+(a sua volta prezzo, quantità e input), la quota di occupati che ci
+lavora
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>n</mi><mi>T</mi></msub><annotation encoding="application/x-tex">n_T</annotation></semantics></math>,
+la quota di spesa in servizi locali
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>α</mi><annotation encoding="application/x-tex">\alpha</annotation></semantics></math>
+e l’avanzo commerciale
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi><annotation encoding="application/x-tex">S</annotation></semantics></math>.
+Sono tutti numeri che si possono misurare.</p>
+<h2 id="le-previsioni-da-mettere-alla-prova">5. Le previsioni da mettere
+alla prova</h2>
+<p>Un modello vale quanto le previsioni che rischia. Questo ne fa
+quattro, tutte verificabili con dati Eurostat su Italia e Germania.</p>
+<ol type="1">
+<li><strong>Il divario di reddito viene dal settore esposto.</strong> La
+differenza tra Italia e Germania deve stare in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>v</mi><mi>T</mi></msub><annotation encoding="application/x-tex">v_T</annotation></semantics></math>
+(il valore aggiunto per addetto del settore esposto), in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>n</mi><mi>T</mi></msub><annotation encoding="application/x-tex">n_T</annotation></semantics></math>
+(quanti ci lavorano), o in entrambi.</li>
+<li><strong>Se sta in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>v</mi><mi>T</mi></msub><annotation encoding="application/x-tex">v_T</annotation></semantics></math>,
+va scomposto ancora.</strong> Può venire dal prezzo
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>p</mi><mi>T</mi></msub><annotation encoding="application/x-tex">p_T</annotation></semantics></math>
+(le imprese italiane vendono a meno), dalla quantità
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>a</mi><mi>T</mi></msub><annotation encoding="application/x-tex">a_T</annotation></semantics></math>
+(producono meno per ora) o dagli input
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>p</mi><mi>M</mi></msub><mo>⋅</mo><msub><mi>m</mi><mi>T</mi></msub></mrow><annotation encoding="application/x-tex">p_M \cdot m_T</annotation></semantics></math>
+(pagano di più energia e componenti).</li>
+<li><strong>La quota lavoro più bassa deve venire dall’alternativa o dal
+potere contrattuale.</strong> Il modello dice come distinguerli: in ogni
+paese l’alternativa
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>b</mi><annotation encoding="application/x-tex">b</annotation></semantics></math>
+è la stessa per tutti i settori, quindi mettendo in relazione la quota
+lavoro dei settori con
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mi>/</mi><mi>v</mi></mrow><annotation encoding="application/x-tex">1/v</annotation></semantics></math>
+si ottiene una retta da cui si leggono
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>β</mi><annotation encoding="application/x-tex">\beta</annotation></semantics></math>
+e
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>b</mi><annotation encoding="application/x-tex">b</annotation></semantics></math>.</li>
+<li><strong>Per le imprese che vendono sul mercato internazionale non
+serve la parità di potere d’acquisto.</strong> Vendono agli stessi
+prezzi, quindi il confronto va fatto in euro correnti. Se il divario
+restasse anche così, non sarebbe un’illusione dovuta ai prezzi.</li>
+</ol>
+<h2 id="primo-confronto-con-i-dati">6. Primo confronto con i dati</h2>
+<p>I conti nazionali Eurostat del 2024 danno questo quadro, in euro
+correnti:</p>
+<table>
+<thead>
+<tr class="header">
+<th>2024</th>
+<th>Italia</th>
+<th>Germania</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Valore aggiunto per ora, tutta l’economia</td>
+<td>43,4 €</td>
+<td>64,4 €</td>
+</tr>
+<tr class="even">
+<td>Costo del lavoro per ora di un dipendente</td>
+<td>25,9 €</td>
+<td>42,6 €</td>
+</tr>
+<tr class="odd">
+<td>Valore aggiunto per ora, manifattura</td>
+<td>45,9 €</td>
+<td>76,2 €</td>
+</tr>
+<tr class="even">
+<td>Costo del lavoro per ora, manifattura</td>
+<td>27,7 €</td>
+<td>50,8 €</td>
+</tr>
+<tr class="odd">
+<td>Ore lavorate nella manifattura sul totale
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>n</mi><mi>T</mi></msub><annotation encoding="application/x-tex">n_T</annotation></semantics></math>)</td>
+<td>15,8%</td>
+<td>16,8%</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Previsione 1, prima metà:
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>n</mi><mi>T</mi></msub><annotation encoding="application/x-tex">n_T</annotation></semantics></math>
+non c’entra.</strong> La quota di ore lavorate nella manifattura è
+praticamente uguale nei due paesi. L’Italia non ha meno persone nel
+settore esposto: il problema deve stare in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>v</mi><mi>T</mi></msub><annotation encoding="application/x-tex">v_T</annotation></semantics></math>.</p>
+<figure class="chart">
+<svg viewBox="0 0 760 444" role="img" aria-label="Valore aggiunto per ora per settore" font-size="12" font-family="inherit">
+<text x="0" y="24" font-size="16" font-weight="600" fill="#1f1f1f">Nella
+manifattura italiana il valore aggiunto per ora è più basso in ogni
+settore</text> <text x="0" y="46" fill="#5f5f5f">Euro correnti per ora
+lavorata, media 2019-2024. A destra lo scarto dell’Italia rispetto alla
+Germania.</text>
+<rect x="0" y="62" width="12" height="12" fill="#2a78d6"/><text x="18" y="72" fill="#1f1f1f">Italia</text><rect x="80" y="62" width="12" height="12" fill="#c4c3b6"/><text x="98" y="72" fill="#1f1f1f">Germania</text>
+<text x="165" y="114" text-anchor="end" fill="#1f1f1f">Farmaceutica</text>
+<rect x="175" y="96" width="337.4" height="14" fill="#2a78d6">
+<title>
+Farmaceutica, Italia: 93.2 €/ora
+</title>
+</rect><text x="518.4" y="107" font-size="11" fill="#1f1f1f">93.2</text>
+<rect x="175" y="112" width="450.0" height="14" fill="#c4c3b6">
+<title>
+Farmaceutica, Germania: 124.3 €/ora
+</title>
+</rect><text x="631.0" y="123" font-size="11" fill="#5f5f5f">124.3</text>
+<text x="755" y="116" text-anchor="end" font-weight="600" fill="#1f1f1f">−25%</text>
+<text x="165" y="152" text-anchor="end" fill="#1f1f1f">Elettronica</text>
+<rect x="175" y="134" width="199.1" height="14" fill="#2a78d6">
+<title>
+Elettronica, Italia: 55.0 €/ora
+</title>
+</rect><text x="380.1" y="145" font-size="11" fill="#1f1f1f">55.0</text>
+<rect x="175" y="150" width="340.3" height="14" fill="#c4c3b6">
+<title>
+Elettronica, Germania: 94.0 €/ora
+</title>
+</rect><text x="521.3" y="161" font-size="11" fill="#5f5f5f">94.0</text>
+<text x="755" y="154" text-anchor="end" font-weight="600" fill="#1f1f1f">−41%</text>
+<text x="165" y="190" text-anchor="end" fill="#1f1f1f">Chimica</text>
+<rect x="175" y="172" width="228.4" height="14" fill="#2a78d6">
+<title>
+Chimica, Italia: 63.1 €/ora
+</title>
+</rect><text x="409.4" y="183" font-size="11" fill="#1f1f1f">63.1</text>
+<rect x="175" y="188" width="332.0" height="14" fill="#c4c3b6">
+<title>
+Chimica, Germania: 91.7 €/ora
+</title>
+</rect><text x="513.0" y="199" font-size="11" fill="#5f5f5f">91.7</text>
+<text x="755" y="192" text-anchor="end" font-weight="600" fill="#1f1f1f">−31%</text>
+<text x="165" y="228" text-anchor="end" fill="#1f1f1f">Apparecchi
+elettrici</text>
+<rect x="175" y="210" width="166.5" height="14" fill="#2a78d6">
+<title>
+Apparecchi elettrici, Italia: 46.0 €/ora
+</title>
+</rect><text x="347.5" y="221" font-size="11" fill="#1f1f1f">46.0</text>
+<rect x="175" y="226" width="244.4" height="14" fill="#c4c3b6">
+<title>
+Apparecchi elettrici, Germania: 67.5 €/ora
+</title>
+</rect><text x="425.4" y="237" font-size="11" fill="#5f5f5f">67.5</text>
+<text x="755" y="230" text-anchor="end" font-weight="600" fill="#1f1f1f">−32%</text>
+<text x="165" y="266" text-anchor="end" fill="#1f1f1f">Macchinari</text>
+<rect x="175" y="248" width="172.7" height="14" fill="#2a78d6">
+<title>
+Macchinari, Italia: 47.7 €/ora
+</title>
+</rect><text x="353.7" y="259" font-size="11" fill="#1f1f1f">47.7</text>
+<rect x="175" y="264" width="241.1" height="14" fill="#c4c3b6">
+<title>
+Macchinari, Germania: 66.6 €/ora
+</title>
+</rect><text x="422.1" y="275" font-size="11" fill="#5f5f5f">66.6</text>
+<text x="755" y="268" text-anchor="end" font-weight="600" fill="#1f1f1f">−28%</text>
+<text x="165" y="304" text-anchor="end" fill="#1f1f1f">Gomma e
+plastica</text>
+<rect x="175" y="286" width="159.3" height="14" fill="#2a78d6">
+<title>
+Gomma e plastica, Italia: 44.0 €/ora
+</title>
+</rect><text x="340.3" y="297" font-size="11" fill="#1f1f1f">44.0</text>
+<rect x="175" y="302" width="194.0" height="14" fill="#c4c3b6">
+<title>
+Gomma e plastica, Germania: 53.6 €/ora
+</title>
+</rect><text x="375.0" y="313" font-size="11" fill="#5f5f5f">53.6</text>
+<text x="755" y="306" text-anchor="end" font-weight="600" fill="#1f1f1f">−18%</text>
+<text x="165" y="342" text-anchor="end" fill="#1f1f1f">Metalli</text>
+<rect x="175" y="324" width="140.5" height="14" fill="#2a78d6">
+<title>
+Metalli, Italia: 38.8 €/ora
+</title>
+</rect><text x="321.5" y="335" font-size="11" fill="#1f1f1f">38.8</text>
+<rect x="175" y="340" width="183.9" height="14" fill="#c4c3b6">
+<title>
+Metalli, Germania: 50.8 €/ora
+</title>
+</rect><text x="364.9" y="351" font-size="11" fill="#5f5f5f">50.8</text>
+<text x="755" y="344" text-anchor="end" font-weight="600" fill="#1f1f1f">−24%</text>
+<text x="165" y="380" text-anchor="end" fill="#1f1f1f">Tessile e
+moda</text>
+<rect x="175" y="362" width="123.5" height="14" fill="#2a78d6">
+<title>
+Tessile e moda, Italia: 34.1 €/ora
+</title>
+</rect><text x="304.5" y="373" font-size="11" fill="#1f1f1f">34.1</text>
+<rect x="175" y="378" width="169.1" height="14" fill="#c4c3b6">
+<title>
+Tessile e moda, Germania: 46.7 €/ora
+</title>
+</rect><text x="350.1" y="389" font-size="11" fill="#5f5f5f">46.7</text>
+<text x="755" y="382" text-anchor="end" font-weight="600" fill="#1f1f1f">−27%</text>
+<text x="165" y="418" text-anchor="end" fill="#1f1f1f">Alimentari</text>
+<rect x="175" y="400" width="137.6" height="14" fill="#2a78d6">
+<title>
+Alimentari, Italia: 38.0 €/ora
+</title>
+</rect><text x="318.6" y="411" font-size="11" fill="#1f1f1f">38.0</text>
+<rect x="175" y="416" width="150.2" height="14" fill="#c4c3b6">
+<title>
+Alimentari, Germania: 41.5 €/ora
+</title>
+</rect><text x="331.2" y="427" font-size="11" fill="#5f5f5f">41.5</text>
+<text x="755" y="420" text-anchor="end" font-weight="600" fill="#1f1f1f">−8%</text>
+</svg>
+<figcaption>
+Fonte: Eurostat, conti nazionali nama_10_a64 e nama_10_a64_e · valore
+aggiunto a prezzi correnti diviso per ore lavorate, media 2019-2024
+</figcaption>
+</figure>
+<p><strong>Il divario sta dentro ogni settore, non nella
+composizione.</strong> Dando all’Italia la composizione settoriale
+tedesca, il valore aggiunto manifatturiero salirebbe solo da 46 a 49 €
+per ora. Le imprese italiane non sono concentrate in settori poveri:
+sono più povere dentro ciascun settore. E sono euro correnti, per beni
+che i due paesi vendono agli stessi prezzi sul mercato internazionale,
+come il pneumatico della sezione 2: il divario non è un effetto dei
+prezzi più alti in Germania, come nel caso del taglio di capelli.</p>
+<p><strong>Gli input: l’energia non spiega il divario.</strong> Nel
+secondo semestre del 2025 l’elettricità per l’industria costava 0,195
+€/kWh in Italia e 0,192 in Germania (Eurostat, tasse escluse), e il gas
+italiano costava meno del tedesco. Rispetto a Francia e Spagna l’Italia
+paga di più, rispetto alla Germania no.</p>
+<p><strong>Ma la quota di valore aggiunto sul fatturato sì.</strong>
+Attenzione a non confondere due grandezze.
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>v</mi><annotation encoding="application/x-tex">v</annotation></semantics></math>
+è il valore aggiunto per ora. La quota di valore aggiunto è un’altra
+cosa: quanta parte di ogni euro di fatturato resta all’impresa dopo aver
+pagato i fornitori. Nel modello vale:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mtext mathvariant="normal">Valore aggiunto</mtext><mtext mathvariant="normal">Fatturato</mtext></mfrac><mo>=</mo><mn>1</mn><mo>−</mo><mfrac><mrow><msub><mi>p</mi><mi>M</mi></msub><mspace width="0.167em"></mspace><msub><mi>m</mi><mi>T</mi></msub></mrow><mrow><msub><mi>p</mi><mi>T</mi></msub><mspace width="0.167em"></mspace><msub><mi>a</mi><mi>T</mi></msub></mrow></mfrac></mrow><annotation encoding="application/x-tex">\frac{\text{Valore aggiunto}}{\text{Fatturato}} = 1 - \frac{p_M\,m_T}{p_T\,a_T}</annotation></semantics></math></p>
+<p>Nella manifattura è il 27% in Italia e il 34% in Germania. Il valore
+aggiunto per ora si scompone quindi così:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>=</mo><mfrac><mtext mathvariant="normal">Fatturato</mtext><mtext mathvariant="normal">ora</mtext></mfrac><mo>×</mo><mfrac><mtext mathvariant="normal">Valore aggiunto</mtext><mtext mathvariant="normal">Fatturato</mtext></mfrac></mrow><annotation encoding="application/x-tex">v = \frac{\text{Fatturato}}{\text{ora}} \times \frac{\text{Valore aggiunto}}{\text{Fatturato}}</annotation></semantics></math></p>
+<p>Il fatturato per ora è 171 € in Italia e 225 € in Germania (−24%). Le
+due parti spiegano rispettivamente il 54% e il 46% del divario di
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>v</mi><annotation encoding="application/x-tex">v</annotation></semantics></math>.
+Le imprese italiane fatturano meno per ora e, per ogni euro venduto,
+comprano più cose da altre imprese. Visto che il prezzo dell’energia è
+simile, il sospetto cade sulle filiere frammentate: molte imprese
+piccole che fanno ciascuna un pezzo del prodotto.</p>
+<p><strong>La quota lavoro: più bassa, e per colpa
+dell’alternativa.</strong> Abbiamo stimato la retta della previsione 3
+sui 16 settori di ciascun paese (media 2019-2024). Il potere
+contrattuale risulta quasi identico:
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>β</mi><annotation encoding="application/x-tex">\beta</annotation></semantics></math>
+= 0,59 in Italia e 0,60 in Germania. L’alternativa invece è molto più
+bassa:
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>b</mi><annotation encoding="application/x-tex">b</annotation></semantics></math>
+≈ 6,6 € per ora in Italia contro 16,3 in Germania. La retta spiega solo
+una parte dei dati (R² 0,44 e 0,23), quindi i valori sono indicativi. Ma
+la direzione è chiara: i margini italiani più alti non vengono da
+lavoratori con meno potere contrattuale, vengono da alternative
+peggiori.</p>
+<h2 id="prezzo-o-quantità-il-test-sullexport">7. Prezzo o quantità? Il
+test sull’export</h2>
+<p>Il fatturato per ora delle imprese italiane è più basso del 24%. Le
+spiegazioni possibili sono due: vendono a prezzi più bassi
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>p</mi><mi>T</mi></msub><annotation encoding="application/x-tex">p_T</annotation></semantics></math>),
+oppure producono meno per ora
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>a</mi><mi>T</mi></msub><annotation encoding="application/x-tex">a_T</annotation></semantics></math>).
+Per separarle abbiamo calcolato il prezzo al chilogrammo dell’export di
+20 prodotti, cioè il valore esportato diviso per il peso, per Italia e
+Germania.</p>
+<figure class="chart">
+<svg viewBox="0 0 760 580" role="img" aria-label="Prezzi unitari export Italia/Germania" font-size="12" font-family="inherit">
+<text x="0" y="24" font-size="16" font-weight="600" fill="#1f1f1f">I
+prezzi dell’export italiano non sono sistematicamente più bassi</text>
+<text x="0" y="46" fill="#5f5f5f">Prezzo al kg dell’export italiano
+diviso per quello tedesco, 2022-2025 (scala logaritmica, 1 = stesso
+prezzo).</text> <text x="0" y="66" fill="#5f5f5f">11 prodotti su 20
+sotto la parità, 9 sopra</text> <text x="0" y="82" fill="#2a78d6">In blu
+la meccanica: è il gruppo dove l’Italia vende a prezzi più bassi</text>
+<line x1="420" x2="420" y1="86" y2="532" stroke="#8a8a8a" stroke-dasharray="3 3"/>
+<text x="420" y="548" text-anchor="middle" fill="#5f5f5f">parità</text>
+<text x="410" y="566" text-anchor="end" fill="#5f5f5f">← Italia più
+economica</text><text x="430" y="566" fill="#5f5f5f">Italia più cara
+→</text>
+<text x="0" y="104" fill="#1f1f1f">Valvole</text><rect x="235.9" y="94" width="184.1" height="14" fill="#2a78d6">
+<title>
+Valvole: 0.53
+</title>
+</rect>
+<text x="230.9" y="105" text-anchor="end" font-size="11" fill="#1f1f1f">0.53</text>
+<text x="0" y="126" fill="#1f1f1f">Pompe
+centrifughe</text><rect x="286.0" y="116" width="134.0" height="14" fill="#2a78d6">
+<title>
+Pompe centrifughe: 0.63
+</title>
+</rect>
+<text x="281.0" y="127" text-anchor="end" font-size="11" fill="#1f1f1f">0.63</text>
+<text x="0" y="148" fill="#1f1f1f">Macchine per
+imballaggio</text><rect x="295.1" y="138" width="124.9" height="14" fill="#2a78d6">
+<title>
+Macchine per imballaggio: 0.65
+</title>
+</rect>
+<text x="290.1" y="149" text-anchor="end" font-size="11" fill="#1f1f1f">0.65</text>
+<text x="0" y="170" fill="#1f1f1f">Torni a controllo
+numerico</text><rect x="312.4" y="160" width="107.6" height="14" fill="#2a78d6">
+<title>
+Torni a controllo numerico: 0.69
+</title>
+</rect>
+<text x="307.4" y="171" text-anchor="end" font-size="11" fill="#1f1f1f">0.69</text>
+<text x="0" y="192" fill="#1f1f1f">Motori
+elettrici</text><rect x="328.7" y="182" width="91.3" height="14" fill="#2a78d6">
+<title>
+Motori elettrici: 0.73
+</title>
+</rect>
+<text x="323.7" y="193" text-anchor="end" font-size="11" fill="#1f1f1f">0.73</text>
+<text x="0" y="214" fill="#1f1f1f">Centri di
+lavoro</text><rect x="366.0" y="204" width="54.0" height="14" fill="#2a78d6">
+<title>
+Centri di lavoro: 0.83
+</title>
+</rect>
+<text x="361.0" y="215" text-anchor="end" font-size="11" fill="#1f1f1f">0.83</text>
+<text x="0" y="236" fill="#1f1f1f">Auto 1,5-3
+litri</text><rect x="392.6" y="226" width="27.4" height="14" fill="#c4c3b6">
+<title>
+Auto 1,5-3 litri: 0.91
+</title>
+</rect>
+<text x="387.6" y="237" text-anchor="end" font-size="11" fill="#1f1f1f">0.91</text>
+<text x="0" y="258" fill="#1f1f1f">Polietilene</text><rect x="399.0" y="248" width="21.0" height="14" fill="#c4c3b6">
+<title>
+Polietilene: 0.93
+</title>
+</rect>
+<text x="394.0" y="259" text-anchor="end" font-size="11" fill="#1f1f1f">0.93</text>
+<text x="0" y="280" fill="#1f1f1f">Pasta</text><rect x="402.1" y="270" width="17.9" height="14" fill="#c4c3b6">
+<title>
+Pasta: 0.94
+</title>
+</rect>
+<text x="397.1" y="281" text-anchor="end" font-size="11" fill="#1f1f1f">0.94</text>
+<text x="0" y="302" fill="#1f1f1f">Auto
+elettriche</text><rect x="405.1" y="292" width="14.9" height="14" fill="#c4c3b6">
+<title>
+Auto elettriche: 0.95
+</title>
+</rect>
+<text x="400.1" y="303" text-anchor="end" font-size="11" fill="#1f1f1f">0.95</text>
+<text x="0" y="324" fill="#1f1f1f">Lamiere
+zincate</text><rect x="411.2" y="314" width="8.8" height="14" fill="#c4c3b6">
+<title>
+Lamiere zincate: 0.97
+</title>
+</rect>
+<text x="406.2" y="325" text-anchor="end" font-size="11" fill="#1f1f1f">0.97</text>
+<text x="0" y="346" fill="#1f1f1f">Pneumatici
+auto</text><rect x="420.0" y="336" width="2.9" height="14" fill="#c4c3b6">
+<title>
+Pneumatici auto: 1.01
+</title>
+</rect>
+<text x="427.9" y="347" text-anchor="start" font-size="11" fill="#1f1f1f">1.01</text>
+<text x="0" y="368" fill="#1f1f1f">Macchine
+riempitrici</text><rect x="420.0" y="358" width="11.4" height="14" fill="#2a78d6">
+<title>
+Macchine riempitrici: 1.04
+</title>
+</rect>
+<text x="436.4" y="369" text-anchor="start" font-size="11" fill="#1f1f1f">1.04</text>
+<text x="0" y="390" fill="#1f1f1f">Farmaci</text><rect x="420.0" y="380" width="35.4" height="14" fill="#c4c3b6">
+<title>
+Farmaci: 1.13
+</title>
+</rect>
+<text x="460.4" y="391" text-anchor="start" font-size="11" fill="#1f1f1f">1.13</text>
+<text x="0" y="412" fill="#1f1f1f">Mobili in
+legno</text><rect x="420.0" y="402" width="60.0" height="14" fill="#c4c3b6">
+<title>
+Mobili in legno: 1.23
+</title>
+</rect>
+<text x="485.0" y="413" text-anchor="start" font-size="11" fill="#1f1f1f">1.23</text>
+<text x="0" y="434" fill="#1f1f1f">Piastrelle</text><rect x="420.0" y="424" width="69.3" height="14" fill="#c4c3b6">
+<title>
+Piastrelle: 1.27
+</title>
+</rect>
+<text x="494.3" y="435" text-anchor="start" font-size="11" fill="#1f1f1f">1.27</text>
+<text x="0" y="456" fill="#1f1f1f">Scarpe in
+pelle</text><rect x="420.0" y="446" width="172.1" height="14" fill="#c4c3b6">
+<title>
+Scarpe in pelle: 1.81
+</title>
+</rect>
+<text x="597.1" y="457" text-anchor="start" font-size="11" fill="#1f1f1f">1.81</text>
+<text x="0" y="478" fill="#1f1f1f">Pantaloni di
+cotone</text><rect x="420.0" y="468" width="198.1" height="14" fill="#c4c3b6">
+<title>
+Pantaloni di cotone: 1.98
+</title>
+</rect>
+<text x="623.1" y="479" text-anchor="start" font-size="11" fill="#1f1f1f">1.98</text>
+<text x="0" y="500" fill="#1f1f1f">Formaggi</text><rect x="420.0" y="490" width="244.1" height="14" fill="#c4c3b6">
+<title>
+Formaggi: 2.32
+</title>
+</rect>
+<text x="669.1" y="501" text-anchor="start" font-size="11" fill="#1f1f1f">2.32</text>
+<text x="0" y="522" fill="#1f1f1f">Auto oltre 3
+litri</text><rect x="420.0" y="512" width="272.6" height="14" fill="#c4c3b6">
+<title>
+Auto oltre 3 litri: 2.56
+</title>
+</rect>
+<text x="697.6" y="523" text-anchor="start" font-size="11" fill="#1f1f1f">2.56</text>
+</svg>
+<figcaption>
+Fonte: Eurostat Comext DS-045409 · export di Italia e Germania verso il
+mondo, valori e pesi cumulati 2022-2025
+</figcaption>
+</figure>
+<p><em>Nota sulle auto oltre 3 litri (2,56).</em> Non significa che le
+auto italiane costino in generale più di quelle tedesche. Il codice
+doganale riguarda solo le auto a benzina sopra i 3.000 cm³. In questa
+categoria l’Italia esporta quasi soltanto supercar (Ferrari,
+Lamborghini, Maserati); la Germania soprattutto Porsche, BMW, Mercedes e
+Audi di fascia alta, in volumi molto maggiori e a prezzi medi più bassi.
+Nella cilindrata media (1,5-3 litri), dove i prodotti sono più
+confrontabili, il rapporto è 0,91: le auto tedesche valgono un po’ di
+più al kg.</p>
+<p><strong>L’ipotesi del prezzo è falsificata come spiegazione
+generale.</strong> La media dei rapporti, pesata per valore esportato, è
+1,08 verso il mondo, 0,89 verso Stati Uniti e Francia, 1,13 verso la
+Cina. Il prezzo sposta il risultato di circa ±12% a seconda del mercato,
+e la maggior parte del divario di fatturato resta da spiegare con le
+quantità prodotte per ora.</p>
+<p>Dietro la media però ci sono tre gruppi molto diversi:</p>
+<ul>
+<li><strong>Meccanica: l’Italia vende a prezzi al kg molto più
+bassi</strong> (da 0,53 a 0,83 nella maggior parte dei casi). È il
+settore manifatturiero più grande del paese. Qui
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>p</mi><mi>T</mi></msub><annotation encoding="application/x-tex">p_T</annotation></semantics></math>
+conta: macchine più semplici, una fascia di mercato più bassa, o il
+ruolo di subfornitore.</li>
+<li><strong>Moda, cibo e lusso: l’Italia incassa di più.</strong> Scarpe
+1,81, formaggi 2,32, auto di grossa cilindrata 2,56. Qui il marchio
+funziona.</li>
+<li><strong>Prodotti standard: quasi pari.</strong> Pneumatici, lamiere,
+polietilene, pasta.</li>
+</ul>
+<p>Due limiti. Venti prodotti non sono tutta la manifattura. E il prezzo
+al kg confonde prezzo e tipo di prodotto: una macchina più pesante e più
+semplice costa meno al kg. Per il modello è comunque un
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>p</mi><mi>T</mi></msub><annotation encoding="application/x-tex">p_T</annotation></semantics></math>
+più basso, cioè una fascia di mercato più bassa.</p>
+<p>L’attenzione si sposta quindi su
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>a</mi><mi>T</mi></msub><annotation encoding="application/x-tex">a_T</annotation></semantics></math>,
+la quantità prodotta per ora, e sul secondo indizio della sezione
+precedente: le imprese italiane comprano più input esterni per ogni euro
+venduto. Meno produzione per ora e filiere più frammentate sono
+esattamente i sintomi che ci si aspetta da imprese piccole.</p>
+<h2 id="il-test-decisivo-la-dimensione-delle-imprese">8. Il test
+decisivo: la dimensione delle imprese</h2>
+<p>Se meno produzione per ora e filiere frammentate vengono da imprese
+piccole, il modello fa una previsione netta: confrontando imprese
+italiane e tedesche della stessa dimensione, il divario deve ridursi
+molto. Se resta anche tra le grandi imprese, l’ipotesi è falsificata. Le
+statistiche strutturali Eurostat permettono di fare esattamente questo
+confronto.</p>
+<figure class="chart">
+<svg viewBox="0 0 760 450" role="img" aria-label="Valore aggiunto per ora per dimensione d&#39;impresa" font-size="12" font-family="inherit">
+<text x="0" y="24" font-size="16" font-weight="600" fill="#1f1f1f">A
+parità di dimensione l’Italia produce quanto la Germania</text>
+<text x="0" y="46" fill="#5f5f5f">Manifattura 2023, valore aggiunto per
+ora lavorata (€) per classe di addetti. Sotto, la quota di ore lavorate
+in ogni classe.</text> <text x="0" y="66" fill="#5f5f5f">Media pesata
+per le ore: Italia 55.4 €, Germania 66.3 €</text>
+<rect x="0" y="78" width="12" height="12" fill="#2a78d6"/><text x="18" y="88" fill="#1f1f1f">Italia</text><rect x="80" y="78" width="12" height="12" fill="#c4c3b6"/><text x="98" y="88" fill="#1f1f1f">Germania</text>
+<line x1="40" x2="740" y1="360" y2="360" stroke="#8a8a8a"/>
+<rect x="72.0" y="217.8" width="36" height="142.2" fill="#2a78d6">
+<title>
+0-9 addetti, Italia: 44.2 €/ora
+</title>
+</rect><text x="90.0" y="211.8" text-anchor="middle" font-size="11" fill="#1f1f1f">44.2</text>
+<rect x="112.0" y="226.8" width="36" height="133.2" fill="#c4c3b6">
+<title>
+0-9 addetti, Germania: 41.4 €/ora
+</title>
+</rect><text x="130.0" y="220.8" text-anchor="middle" font-size="11" fill="#5f5f5f">41.4</text>
+<text x="110.0" y="380" text-anchor="middle" fill="#1f1f1f">0-9
+addetti</text><text x="110.0" y="404" text-anchor="middle" font-weight="600" fill="#2a78d6">11%</text><text x="110.0" y="422" text-anchor="middle" fill="#5f5f5f">4%</text>
+<rect x="212.0" y="235.5" width="36" height="124.5" fill="#2a78d6">
+<title>
+10-19, Italia: 38.7 €/ora
+</title>
+</rect><text x="230.0" y="229.5" text-anchor="middle" font-size="11" fill="#1f1f1f">38.7</text>
+<rect x="252.0" y="226.8" width="36" height="133.2" fill="#c4c3b6">
+<title>
+10-19, Germania: 41.4 €/ora
+</title>
+</rect><text x="270.0" y="220.8" text-anchor="middle" font-size="11" fill="#5f5f5f">41.4</text>
+<text x="250.0" y="380" text-anchor="middle" fill="#1f1f1f">10-19</text><text x="250.0" y="404" text-anchor="middle" font-weight="600" fill="#2a78d6">13%</text><text x="250.0" y="422" text-anchor="middle" fill="#5f5f5f">4%</text>
+<rect x="352.0" y="217.8" width="36" height="142.2" fill="#2a78d6">
+<title>
+20-49, Italia: 44.2 €/ora
+</title>
+</rect><text x="370.0" y="211.8" text-anchor="middle" font-size="11" fill="#1f1f1f">44.2</text>
+<rect x="392.0" y="229.4" width="36" height="130.6" fill="#c4c3b6">
+<title>
+20-49, Germania: 40.6 €/ora
+</title>
+</rect><text x="410.0" y="223.4" text-anchor="middle" font-size="11" fill="#5f5f5f">40.6</text>
+<text x="390.0" y="380" text-anchor="middle" fill="#1f1f1f">20-49</text><text x="390.0" y="404" text-anchor="middle" font-weight="600" fill="#2a78d6">17%</text><text x="390.0" y="422" text-anchor="middle" fill="#5f5f5f">9%</text>
+<rect x="492.0" y="185.6" width="36" height="174.4" fill="#2a78d6">
+<title>
+50-249, Italia: 54.2 €/ora
+</title>
+</rect><text x="510.0" y="179.6" text-anchor="middle" font-size="11" fill="#1f1f1f">54.2</text>
+<rect x="532.0" y="198.2" width="36" height="161.8" fill="#c4c3b6">
+<title>
+50-249, Germania: 50.3 €/ora
+</title>
+</rect><text x="550.0" y="192.2" text-anchor="middle" font-size="11" fill="#5f5f5f">50.3</text>
+<text x="530.0" y="380" text-anchor="middle" fill="#1f1f1f">50-249</text><text x="530.0" y="404" text-anchor="middle" font-weight="600" fill="#2a78d6">28%</text><text x="530.0" y="422" text-anchor="middle" fill="#5f5f5f">19%</text>
+<rect x="632.0" y="124.8" width="36" height="235.2" fill="#2a78d6">
+<title>
+250 e oltre, Italia: 73.1 €/ora
+</title>
+</rect><text x="650.0" y="118.8" text-anchor="middle" font-size="11" fill="#1f1f1f">73.1</text>
+<rect x="672.0" y="110.0" width="36" height="250.0" fill="#c4c3b6">
+<title>
+250 e oltre, Germania: 77.7 €/ora
+</title>
+</rect><text x="690.0" y="104.0" text-anchor="middle" font-size="11" fill="#5f5f5f">77.7</text>
+<text x="670.0" y="380" text-anchor="middle" fill="#1f1f1f">250 e
+oltre</text><text x="670.0" y="404" text-anchor="middle" font-weight="600" fill="#2a78d6">32%</text><text x="670.0" y="422" text-anchor="middle" fill="#5f5f5f">64%</text>
+<text x="0" y="404" font-size="11" fill="#2a78d6">ore
+IT</text><text x="0" y="422" font-size="11" fill="#5f5f5f">ore DE</text>
+</svg>
+<figcaption>
+Fonte: Eurostat, statistiche strutturali sulle imprese sbs_sc_ovw ·
+manifattura (NACE C), 2023
+</figcaption>
+</figure>
+<p><strong>Confermata.</strong> In ogni classe dimensionale il valore
+aggiunto per ora delle imprese italiane è entro l’8% di quello tedesco,
+a volte sopra. Quello che cambia è dove si lavora: in Germania il 64%
+delle ore si lavora in imprese con oltre 250 addetti, in Italia il 32%.
+Con la distribuzione dimensionale tedesca, la manifattura italiana
+arriverebbe a 64,4 € per ora contro 66,2 € della Germania. La dimensione
+spiega tra i due terzi e il 93% del divario di valore aggiunto, a
+seconda dell’anno tra il 2021 e il 2024.</p>
+<p>C’è un’eccezione: la meccanica. Lì la dimensione spiega solo il
+35-43% del divario, e anche le grandi imprese meccaniche italiane
+producono il 5-9% in meno per addetto delle tedesche. È coerente con i
+prezzi unitari più bassi visti nella sezione 7.</p>
+<h3 id="una-nota-sulle-ore-lavorate">Una nota sulle ore lavorate</h3>
+<p>Questo risultato è diverso da quello dei conti nazionali della
+sezione 6, dove il divario di valore aggiunto per ora nella manifattura
+era del 40% invece che del 16%. La differenza nasce quasi tutta dal
+conteggio delle ore:</p>
+<table>
+<thead>
+<tr class="header">
+<th>Ore annue per occupato, manifattura 2023</th>
+<th>Italia</th>
+<th>Germania</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Contabilità nazionale</td>
+<td>1.807</td>
+<td>1.405</td>
+</tr>
+<tr class="even">
+<td>Statistiche sulle imprese</td>
+<td>1.478</td>
+<td>1.432</td>
+</tr>
+</tbody>
+</table>
+<p>Per la Germania le due fonti coincidono. Per l’Italia i conti
+nazionali contano il 22% di ore in più. Una spiegazione plausibile, non
+verificata, è che l’Istat includa stime del lavoro irregolare e degli
+straordinari. Le misure per addetto non dipendono dalle ore e puntano
+nella stessa direzione: il valore aggiunto per addetto italiano è
+l’80-86% di quello tedesco a seconda della fonte. Ma la lezione resta:
+il famoso divario di “produttività oraria” dipende in buona parte da
+come si contano le ore.</p>
+<h2 id="il-bilancio-cosa-resta-in-piedi">9. Il bilancio: cosa resta in
+piedi</h2>
+<p>Con le statistiche sulle imprese possiamo rifare la scomposizione
+dell’identità iniziale,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>w</mi><mo>=</mo><mi>s</mi><mo>⋅</mo><mi>v</mi></mrow><annotation encoding="application/x-tex">w = s \cdot v</annotation></semantics></math>,
+senza il problema delle ore. Il risultato è stabile su quattro anni:</p>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Manifattura</th>
+<th>2021</th>
+<th>2022</th>
+<th>2023</th>
+<th>2024</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Costo del lavoro per ora, Italia / Germania</td>
+<td>28,1 / 42,5 €</td>
+<td>28,7 / 45,1 €</td>
+<td>29,4 / 45,7 €</td>
+<td>30,3 / 47,5 €</td>
+</tr>
+<tr class="even">
+<td>Parte del divario dovuta al valore aggiunto
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>v</mi><annotation encoding="application/x-tex">v</annotation></semantics></math></td>
+<td>52%</td>
+<td>48%</td>
+<td>40%</td>
+<td>50%</td>
+</tr>
+<tr class="odd">
+<td>Parte del divario dovuta alla quota lavoro
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>s</mi><annotation encoding="application/x-tex">s</annotation></semantics></math></td>
+<td>48%</td>
+<td>52%</td>
+<td>60%</td>
+<td>50%</td>
+</tr>
+<tr class="even">
+<td>Quota lavoro, Italia / Germania</td>
+<td>0,56 / 0,69</td>
+<td>0,53 / 0,67</td>
+<td>0,53 / 0,69</td>
+<td>0,56 / 0,70</td>
+</tr>
+<tr class="odd">
+<td>Grandi imprese (250+): valore aggiunto per addetto,
+Italia/Germania</td>
+<td>0,97</td>
+<td>1,02</td>
+<td>1,05</td>
+<td>1,00</td>
+</tr>
+<tr class="even">
+<td>Grandi imprese (250+): costo per dipendente, Italia/Germania</td>
+<td>0,80</td>
+<td>0,77</td>
+<td>0,80</td>
+<td>0,79</td>
+</tr>
+</tbody>
+</table>
+<p>L’ultima coppia di righe è il risultato più robusto di tutta
+l’analisi. Le grandi imprese manifatturiere italiane producono lo stesso
+valore aggiunto per addetto delle tedesche, ma pagano ogni anno il
+20-23% in meno per dipendente. Non dipende da come si contano le ore, e
+vale anche per le medie imprese: la quota lavoro italiana è più bassa di
+12-17 punti in entrambe le classi.</p>
+<p>Il verdetto sulle ipotesi:</p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Ipotesi</th>
+<th>Esito</th>
+<th>Peso sul divario salariale nella manifattura</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Quota lavoro più bassa a parità di dimensione e di valore aggiunto
+(margini più alti), dovuta all’alternativa</td>
+<td>Confermata</td>
+<td>Circa metà</td>
+</tr>
+<tr class="even">
+<td>Valore aggiunto più basso in aggregato, dovuto a imprese più
+piccole</td>
+<td>Confermata</td>
+<td>Circa metà</td>
+</tr>
+<tr class="odd">
+<td>Meno lavoratori nel settore esposto
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>n</mi><mi>T</mi></msub><annotation encoding="application/x-tex">n_T</annotation></semantics></math>)</td>
+<td>Falsificata</td>
+<td>Circa zero</td>
+</tr>
+<tr class="even">
+<td>Costo dell’energia (contro la Germania, dati fino al 2025)</td>
+<td>Falsificata</td>
+<td>Circa zero</td>
+</tr>
+<tr class="odd">
+<td>Prezzi di vendita più bassi in generale
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>p</mi><mi>T</mi></msub><annotation encoding="application/x-tex">p_T</annotation></semantics></math>)</td>
+<td>Falsificata, salvo la meccanica</td>
+<td>Piccolo</td>
+</tr>
+<tr class="even">
+<td>Minore efficienza a parità di dimensione</td>
+<td>Falsificata, salvo la meccanica</td>
+<td>Piccolo</td>
+</tr>
+<tr class="odd">
+<td>Minore potere contrattuale
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>β</mi><annotation encoding="application/x-tex">\beta</annotation></semantics></math>)</td>
+<td>Falsificata</td>
+<td>Circa zero</td>
+</tr>
+</tbody>
+</table>
+<p>La parola “produttività”, insomma, copriva due cose: la dimensione
+delle imprese, che spiega quasi tutto il divario di valore aggiunto, e
+una distribuzione sfavorevole ai salari, che la parola non nomina
+affatto.</p>
+<h2 id="cosa-significa-margini-alti-alternative-povere">10. Cosa
+significa: margini alti, alternative povere</h2>
+<p>I salari italiani sono bassi per due ragioni che si rinforzano a
+vicenda: l’alternativa dei lavoratori è povera e il valore aggiunto
+medio è basso perché le imprese sono piccole. Ma dentro questo quadro
+c’è una categoria di imprese, quelle medio-grandi che vendono sul
+mercato internazionale, che guadagna margini più alti delle equivalenti
+tedesche.</p>
+<h3
+id="i-margini-alti-dove-si-vende-allestero-normali-dove-si-vende-in-casa">I
+margini: alti dove si vende all’estero, normali dove si vende in
+casa</h3>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Margine operativo lordo / valore aggiunto, 2021-2024</th>
+<th>Italia</th>
+<th>Germania</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Manifattura, imprese 250+</td>
+<td>46%</td>
+<td>31%</td>
+</tr>
+<tr class="even">
+<td>Informatica e telecomunicazioni</td>
+<td>46%</td>
+<td>33%</td>
+</tr>
+<tr class="odd">
+<td>Trasporti</td>
+<td>36%</td>
+<td>38%</td>
+</tr>
+<tr class="even">
+<td>Alberghi e ristoranti</td>
+<td>36%</td>
+<td>38%</td>
+</tr>
+</tbody>
+</table>
+<p><em>Fonte: <a
+href="https://ec.europa.eu/eurostat/databrowser/view/sbs_sc_ovw/default/table">Eurostat,
+statistiche strutturali sulle imprese per classe dimensionale
+(sbs_sc_ovw)</a>. Margine operativo lordo (GOS_MEUR) diviso per valore
+aggiunto (AV_MEUR), media 2021-2024. Settori NACE: manifattura (C) solo
+imprese con 250 addetti e oltre; informatica e telecomunicazioni (J),
+trasporti (H), alberghi e ristoranti (I) tutte le dimensioni.</em></p>
+<p>È quello che prevede il modello. L’impresa esportatrice vende ai
+prezzi internazionali e paga il lavoro al prezzo dell’alternativa
+locale: la differenza resta come margine. L’impresa che vende in Italia
+ha clienti con redditi bassi, prezzi locali bassi, e nessun vantaggio.
+Nei servizi locali i salari sono bassi non perché le imprese trattengano
+di più, ma perché è basso il reddito che circola. Lo confermano i
+prezzi: alimentari e vestiti costano come in Germania, mentre abitazione
+e ricreazione costano il 15-20% in meno (livelli dei prezzi Eurostat
+2024).</p>
+<h3 id="perché-lalternativa-è-povera-dove-lavorano-gli-italiani">Perché
+l’alternativa è povera: dove lavorano gli italiani</h3>
+<table>
+<thead>
+<tr class="header">
+<th></th>
+<th>Italia</th>
+<th>Germania</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Tasso di occupazione 20-64 anni (2025)</td>
+<td>67,6%</td>
+<td>81,1%</td>
+</tr>
+<tr class="even">
+<td>Occupati delle imprese in aziende con 250+ addetti</td>
+<td>25%</td>
+<td>44%</td>
+</tr>
+<tr class="odd">
+<td>Occupati delle imprese in microimprese (0-9 addetti)</td>
+<td>41%</td>
+<td>19%</td>
+</tr>
+</tbody>
+</table>
+<p>Lavorano meno persone, e quelle che lavorano sono concentrate in
+imprese piccole e in servizi locali a basso valore aggiunto. Per un
+operaio di una grande impresa italiana l’alternativa realistica non è
+un’altra grande impresa, ma una microimpresa o un servizio locale.
+Quell’alternativa povera tiene bassi i salari anche dove il valore
+aggiunto sarebbe da Germania.</p>
+<p>Il circolo si chiude così: poche grandi imprese e poca occupazione
+tengono bassa l’alternativa. L’alternativa bassa tiene bassi i salari
+dei settori esposti, che diventano margini. I margini vengono spesi meno
+dei salari, quindi il reddito arriva poco ai servizi locali, e i salari
+dei servizi restano bassi.</p>
+<h3 id="per-chi-fa-politica-economica-cosa-incentivare">Per chi fa
+politica economica: cosa incentivare</h3>
+<p>Il modello dice quali variabili spostare, non quali strumenti
+funzionano per spostarle. Ogni strumento va valutato a parte. Gli
+obiettivi, in ordine di peso:</p>
+<ol type="1">
+<li><strong>Imprese più grandi nei settori esposti.</strong> È la leva
+che spiega quasi tutto il divario di valore aggiunto. Prima va capito
+perché le imprese italiane non crescono: proprietà familiare, soglie
+normative, accesso al credito sono ipotesi tutte verificabili.</li>
+<li><strong>Più occupazione, ma nei settori esposti.</strong> Occupare
+persone nei servizi locali redistribuisce lo stesso reddito tra più
+persone. Occuparle in imprese che vendono sul mercato internazionale
+porta reddito nuovo nel paese e alza l’alternativa di tutti.</li>
+<li><strong>Una quota maggiore del valore aggiunto ai salari nei settori
+esposti.</strong> Non tanto aumentando il potere contrattuale, che è già
+simile alla Germania, quanto alzando l’alternativa con i due punti sopra
+e con la mobilità interna.</li>
+<li><strong>Spendere nel paese il reddito dell’export.</strong> Non
+accumulare avanzi commerciali: salari più alti si trasformano in consumi
+e arrivano ai servizi locali.</li>
+</ol>
+<p>Due strade da evitare: comprare competitività con la moderazione
+salariale, come la Germania degli anni 2000, e gonfiare l’occupazione in
+settori esposti a basso valore aggiunto.</p>
+<h3 id="per-chi-fa-impresa-un-arbitraggio">Per chi fa impresa: un
+arbitraggio</h3>
+<p>Per un’impresa medio-grande che vende sul mercato internazionale, i
+dati dicono il contrario dei luoghi comuni. In Italia non si produce di
+meno a parità di dimensione, e il lavoro non costa di più: costa circa
+il 20% in meno per lo stesso valore aggiunto per addetto.
+Nell’informatica il costo del lavoro per ora è 33,6 € contro 49,6 € in
+Germania, con una quota lavoro di 0,54 contro 0,67. Costruire in Italia
+prodotti e servizi da vendere all’estero è un vantaggio di margine
+misurabile.</p>
+<p>C’è un dettaglio che lega gli imprenditori ai policy maker. Se questo
+arbitraggio venisse sfruttato su larga scala, le imprese che assumono
+alzerebbero l’alternativa per tutti, e i salari salirebbero fino a
+consumare il margine extra. Il playbook dell’imprenditore e l’obiettivo
+della politica economica sono lo stesso processo visto da due lati.</p>
+<p>Non abbiamo misurato i rischi: giustizia lenta, regole instabili,
+credito più caro. Sono costi reali che possono ridurre il rendimento
+vero. Il prossimo test è il rendimento sul capitale: se è davvero più
+alto a parità di rischio, il problema è il tempo e l’informazione; se
+no, è l’ambiente in cui si fa impresa.</p>
+<h2 id="limiti-e-fonti">Limiti e fonti</h2>
+<p><strong>Cosa questa analisi non dice:</strong></p>
+<ul>
+<li><strong>Spiega il divario di livello, non la stagnazione dal
+1995.</strong> Per il trend abbiamo falsificato solo il calo della quota
+lavoro. Se la stagnazione trentennale venga dalla dimensione delle
+imprese, dall’efficienza o dai prezzi resta da verificare.</li>
+<li><strong>Le statistiche sulle imprese escludono lavoro autonomo e
+sommerso,</strong> che in Italia pesano più che in Germania. Nelle
+microimprese il margine include anche il reddito del titolare.</li>
+<li><strong>Il margine non è il rendimento.</strong> Ammortamenti,
+interessi e tasse non sono stati sottratti, e lo stock di capitale non è
+stato misurato.</li>
+<li><strong>I campioni sono limitati:</strong> 20 prodotti per i prezzi
+dell’export, 16 settori per stimare alternativa e potere contrattuale,
+un solo confronto (Germania) per la maggior parte dei test.</li>
+<li><strong>I dati sull’energia arrivano al 2025</strong> e non coprono
+lo shock del 2026.</li>
+</ul>
+<p><strong>Dati scaricati ed elaborati (Eurostat).</strong> Conti
+nazionali per settore (nama_10_a64, nama_10_a64_e), PIL e commercio
+estero (nama_10_gdp), occupazione (lfsi_emp_a), livelli dei prezzi
+(prc_ppp_ind), prezzi di elettricità e gas per l’industria (nrg_pc_205,
+nrg_pc_203), statistiche strutturali sulle imprese per classe
+dimensionale (sbs_sc_ovw), commercio estero per prodotto (Comext
+DS-045409).</p>
+<p><strong>Fonti citate.</strong></p>
+<ul>
+<li><a
+href="https://scantv.al/english/lajme/europa/be-pagat-mesatare-u-rriten-me-52-cilat-shtete-kryesuan-renditjen-ev-i27826">Eurostat
+– salari medi annui 2024</a></li>
+<li><a href="https://www.fortuneita.com/?p=352638">Fortune Italia –
+salari netti in PPS</a></li>
+<li><a
+href="https://www.lavorodirittieuropa.it/images/LEONARDIdef.pdf">Leonardi
+– Italia e salari: trent’anni di stagnazione</a></li>
+<li><a
+href="https://www.money.it/pil-italia-fara-peggio-dell-eurozona-le-riflessioni-di-panetta-bankitalia-salari-fermi-dal-2000">Money.it
+– Panetta, salari fermi dal 2000</a></li>
+<li><a
+href="https://nens.it/sites/default/files/Pil%20Ppa%20Italia%20Europa.%2018.12.09.pdf">Nens
+– PIL pro capite in PPA (dati AMECO)</a></li>
+<li><a
+href="https://media.fondazionedivittorio.it/sites/default/files/content-attachment/abstract_stampa.pdf">Fondazione
+Di Vittorio / Ires-Cgil</a></li>
+<li><a
+href="https://ec.europa.eu/eurostat/statistics-explained/SEPDF/cache/65807.pdf">Eurostat
+– profitti e investimenti delle imprese</a></li>
+<li><a
+href="https://www.boeckler.de/pdf/v_2022_10_22_giangrande.pdf">Giangrande
+– quota salari in Italia (AMECO)</a></li>
+<li><a
+href="https://www.wiso.uni-hamburg.de/fachbereich-sozoek/professuren/heise/zoess/publikationen/zoess-discussion-papers/dp-121-heise.pdf">Heise
+– quota salari nell’UE</a></li>
+<li><a
+href="https://www.milanofinanza.it/mfnewswires/imprese-istat-1-9-produttivita-lavoro-in-2024-persiste-ampio-gap-con-paesi-ue-202512121324011762">Istat
+– misure di produttività 1995-2024</a></li>
+<li><a
+href="https://researchonline.lse.ac.uk/id/eprint/126836/1/dp1975.pdf">Minni
+– salari nelle multinazionali (LSE)</a></li>
+</ul>
+
+</main></body></html>
