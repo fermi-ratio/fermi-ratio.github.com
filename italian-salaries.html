@@ -51,10 +51,11 @@ settore e dimensione, le aziende italiane</em>
 controparti tedesche. Addirittura, trattengono più margini e
 distribuiscono meno quota del loro valore aggiunto al lavoratore
 italiano (soffrendo di fatto un costo del lavoro inferiore a parità di
-produttività). Il divario tra i salari si spiega principalmente con la
-composizione relativa dell’economia italiana: dominata da PMI che in
-aggregato raccolgono meno valore aggiunto e offrono scarse alternative
-solide al lavoratore italiano.</em></p>
+produttività). Il divario tra i salari si spiega circa per metà con la
+composizione dell’economia italiana, dominata da PMI che in aggregato
+raccolgono meno valore aggiunto, e per metà con questi margini più alti.
+Che i margini vengano da scarse alternative per il lavoratore italiano è
+l’ipotesi più coerente, ma i dati non la confermano ancora.</em></p>
 <h2 id="il-problema-trentanni-di-salari-fermi">1. Il problema:
 trent’anni di salari fermi</h2>
 <p>Nel 2024 un lavoratore italiano a tempo pieno guadagnava in media
@@ -737,19 +738,20 @@ Le imprese italiane fatturano meno per ora e, per ogni euro venduto,
 comprano più cose da altre imprese. Visto che il prezzo dell’energia è
 simile, il sospetto cade sulle filiere frammentate: molte imprese
 piccole che fanno ciascuna un pezzo del prodotto.</p>
-<p><strong>La quota lavoro: più bassa, e per colpa
-dell’alternativa.</strong> Abbiamo stimato la retta della previsione 3
-sui 16 settori di ciascun paese (media 2019-2024). Il potere
-contrattuale risulta quasi identico:
+<p><strong>La quota lavoro: più bassa, e il modello indica
+l’alternativa.</strong> Abbiamo stimato la retta della previsione 3 sui
+16 settori di ciascun paese (media 2019-2024). Il potere contrattuale
+risulta quasi identico:
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>β</mi><annotation encoding="application/x-tex">\beta</annotation></semantics></math>
 = 0,59 in Italia e 0,60 in Germania. L’alternativa invece è molto più
 bassa:
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>b</mi><annotation encoding="application/x-tex">b</annotation></semantics></math>
 ≈ 6,6 € per ora in Italia contro 16,3 in Germania. La retta spiega solo
-una parte dei dati (R² 0,44 e 0,23), quindi i valori sono indicativi. Ma
-la direzione è chiara: i margini italiani più alti non vengono da
-lavoratori con meno potere contrattuale, vengono da alternative
-peggiori.</p>
+una parte dei dati (R² 0,44 e 0,23), quindi i valori sono indicativi. La
+lettura suggerita è che i margini italiani più alti vengano da
+alternative peggiori, non da un minore potere contrattuale. È però
+un’ipotesi: i test più severi della sezione 9 non la confermano in modo
+robusto.</p>
 <h2 id="prezzo-o-quantità-il-test-sullexport">7. Prezzo o quantità? Il
 test sull’export</h2>
 <p>Il fatturato per ora delle imprese italiane è più basso del 24%. Le
@@ -1177,7 +1179,7 @@ vale anche per le medie imprese: la quota lavoro italiana è più bassa di
 <tbody>
 <tr class="odd">
 <td>Quota lavoro più bassa a parità di dimensione e di valore aggiunto
-(margini più alti), dovuta all’alternativa</td>
+(margini più alti)</td>
 <td>Confermata</td>
 <td>Circa metà</td>
 </tr>
@@ -1217,18 +1219,62 @@ piccole</td>
 </tr>
 </tbody>
 </table>
+<h3 id="perché-i-margini-sono-più-alti">Perché i margini sono più
+alti?</h3>
+<p>Che le grandi imprese italiane trattengano più margine è un fatto
+robusto; ma non è chiaro il perché. Il modello indica come causa
+principale la mancanza di <em>alternativa</em>: lavoratori con opzioni
+peggiori ottengono una quota minore.</p>
+<p>L’abbiamo messa alla prova questa previsione in tre modi:</p>
+<ul>
+<li><strong>Regressione tra 32 paesi europei:</strong> poco
+significativo.</li>
+<li><strong>IC sui ranghi tra paesi:</strong> inconclusivo.</li>
+<li><strong>Regioni, in Italia e dentro altri paesi UE:</strong>
+leggermente concordante, ma non robusto.</li>
+</ul>
+<p><em>Dati: test tra paesi su</em> <a
+href="https://ec.europa.eu/eurostat/databrowser/view/sbs_sc_ovw/default/table"><em>statistiche
+strutturali sulle imprese per classe dimensionale
+(sbs_sc_ovw)</em></a><em>, quota lavoro delle imprese manifatturiere con
+250+ addetti, media 2021-2024, più</em> <a
+href="https://ec.europa.eu/eurostat/databrowser/view/lfsi_emp_a/default/table"><em>tasso
+di occupazione 20-64 anni (lfsi_emp_a)</em></a><em>. Test regionali su
+conti regionali NUTS 2, media 2019-2022:</em> <a
+href="https://ec.europa.eu/eurostat/databrowser/view/nama_10r_3gva/default/table"><em>valore
+aggiunto (nama_10r_3gva)</em></a><em>,</em> <a
+href="https://ec.europa.eu/eurostat/databrowser/view/nama_10r_2coe/default/table"><em>redditi
+da lavoro (nama_10r_2coe)</em></a><em>,</em> <a
+href="https://ec.europa.eu/eurostat/databrowser/view/nama_10r_2emhrw/default/table"><em>ore
+lavorate (nama_10r_2emhrw)</em></a><em>,</em> <a
+href="https://ec.europa.eu/eurostat/databrowser/view/lfst_r_lfe2emprt/default/table"><em>tasso
+di occupazione regionale (lfst_r_lfe2emprt)</em></a> <em>e dimensione
+media degli stabilimenti da</em> <a
+href="https://ec.europa.eu/eurostat/databrowser/view/sbs_r_nuts2021/default/table"><em>statistiche
+regionali sulle imprese (sbs_r_nuts2021)</em></a><em>.</em></p>
+<p>Il canale dell’alternativa non è quindi confermato: i segni sono
+quasi sempre giusti, ma il segnale è debole. Restano aperte due
+spiegazioni concorrenti: il potere contrattuale tra paesi, che non
+abbiamo misurato, e un contratto nazionale tarato sull’impresa media
+italiana anziché sulle grandi.</p>
+<p>Dentro l’Italia la quota lavoro è più alta dove il valore aggiunto è
+più basso. I salari variano tra regioni molto meno del valore aggiunto,
+perché li fissa in buona parte il contratto nazionale, come già mostrato
+da Boeri, Ichino, Moretti e Posch.</p>
+<h2 id="cosa-significa-margini-alti-alternative-povere">10. Cosa
+significa: margini alti, alternative povere</h2>
 <p>La parola “produttività”, insomma, copriva due cose: la dimensione
 delle imprese, che spiega quasi tutto il divario di valore aggiunto, e
 una distribuzione sfavorevole ai salari, che la parola non nomina
 affatto.</p>
-<h2 id="cosa-significa-margini-alti-alternative-povere">10. Cosa
-significa: margini alti, alternative povere</h2>
 <p>I salari italiani sono bassi per due ragioni che si rinforzano a
-vicenda: l’alternativa dei lavoratori è povera e il valore aggiunto
-medio è basso perché le imprese sono piccole. Ma dentro questo quadro
-c’è una categoria di imprese, quelle medio-grandi che vendono sul
-mercato internazionale, che guadagna margini più alti delle equivalenti
-tedesche.</p>
+vicenda: il valore aggiunto medio è basso perché le imprese sono
+piccole, e le imprese più produttive trattengono una quota maggiore del
+valore aggiunto. Per la seconda il modello indica un’alternativa povera
+dei lavoratori: è l’ipotesi più coerente con il quadro, ma i dati non la
+confermano ancora (sezione 9). Ma dentro questo quadro c’è una categoria
+di imprese, quelle medio-grandi che vendono sul mercato internazionale,
+che guadagna margini più alti delle equivalenti tedesche.</p>
 <h3
 id="i-margini-alti-dove-si-vende-allestero-normali-dove-si-vende-in-casa">I
 margini: alti dove si vende all’estero, normali dove si vende in
@@ -1286,8 +1332,8 @@ di più, ma perché è basso il reddito che circola. Lo confermano i
 prezzi: alimentari e vestiti costano come in Germania, mentre abitazione
 e ricreazione costano il 15-20% in meno (livelli dei prezzi Eurostat
 2024).</p>
-<h3 id="perché-lalternativa-è-povera-dove-lavorano-gli-italiani">Perché
-l’alternativa è povera: dove lavorano gli italiani</h3>
+<h3 id="unalternativa-povera-dove-lavorano-gli-italiani">Un’alternativa
+povera? Dove lavorano gli italiani</h3>
 <table>
 <thead>
 <tr class="header">
@@ -1318,13 +1364,14 @@ l’alternativa è povera: dove lavorano gli italiani</h3>
 imprese piccole e in servizi locali a basso valore aggiunto. Per un
 operaio di una grande impresa italiana l’alternativa realistica non è
 un’altra grande impresa, ma una microimpresa o un servizio locale.
-Quell’alternativa povera tiene bassi i salari anche dove il valore
-aggiunto sarebbe da Germania.</p>
-<p>Il circolo si chiude così: poche grandi imprese e poca occupazione
-tengono bassa l’alternativa. L’alternativa bassa tiene bassi i salari
-dei settori esposti, che diventano margini. I margini vengono spesi meno
-dei salari, quindi il reddito arriva poco ai servizi locali, e i salari
-dei servizi restano bassi.</p>
+Secondo il modello, quell’alternativa povera tiene bassi i salari anche
+dove il valore aggiunto sarebbe da Germania. È l’ipotesi da verificare:
+i test della sezione 9 non bastano a confermarla.</p>
+<p>Se l’ipotesi regge, il circolo si chiude così: poche grandi imprese e
+poca occupazione tengono bassa l’alternativa. L’alternativa bassa tiene
+bassi i salari dei settori esposti, che diventano margini. I margini
+vengono spesi meno dei salari, quindi il reddito arriva poco ai servizi
+locali, e i salari dei servizi restano bassi.</p>
 <h3 id="per-chi-fa-politica-economica-cosa-incentivare">Per chi fa
 politica economica: cosa incentivare</h3>
 <p>Il modello dice quali variabili spostare, non quali strumenti
@@ -1340,9 +1387,10 @@ persone nei servizi locali redistribuisce lo stesso reddito tra più
 persone. Occuparle in imprese che vendono sul mercato internazionale
 porta reddito nuovo nel paese e alza l’alternativa di tutti.</li>
 <li><strong>Una quota maggiore del valore aggiunto ai salari nei settori
-esposti.</strong> Non tanto aumentando il potere contrattuale, che è già
-simile alla Germania, quanto alzando l’alternativa con i due punti sopra
-e con la mobilità interna.</li>
+esposti.</strong> Se l’ipotesi dell’alternativa è giusta, la leva non è
+tanto il potere contrattuale, che risulta simile alla Germania, quanto
+alzare l’alternativa con i due punti sopra e con la mobilità
+interna.</li>
 <li><strong>Spendere nel paese il reddito dell’export.</strong> Non
 accumulare avanzi commerciali: salari più alti si trasformano in consumi
 e arrivano ai servizi locali.</li>
@@ -1386,6 +1434,11 @@ stato misurato.</li>
 <li><strong>I campioni sono limitati:</strong> 20 prodotti per i prezzi
 dell’export, 16 settori per stimare alternativa e potere contrattuale,
 un solo confronto (Germania) per la maggior parte dei test.</li>
+<li><strong>La spiegazione dei margini alti non è verificata.</strong>
+Il fatto (quota lavoro più bassa a parità di dimensione e valore
+aggiunto) è robusto; la causa indicata dal modello, l’alternativa
+povera, non supera in modo convincente i test tra paesi e tra regioni.
+Il potere contrattuale tra paesi non è stato misurato.</li>
 <li><strong>I dati sull’energia arrivano al 2025</strong> e non coprono
 lo shock del 2026.</li>
 </ul>
